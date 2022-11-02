@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/slider' , function (){
-    return "this is test";
+Route::get('/slider' , function () {
+    return "this is for test text";
 });
+Route::get('/slider/create' , function (){
+    return "<h1>this is create page</h1>";
+});
+Route::get('/post/{id?}/{user?}' , function($id = null,$user = null){
+    return "this is test for post page.$id and $user";
+});
+Route::redirect('/slider/redirect', '/slider', 302);
