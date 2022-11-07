@@ -11,7 +11,11 @@ class SliderController extends Controller
         return "<h1> this page is test</h1>";
     }
 
-    public function slider(){
-         return "this page is slider";
+    public function slider($username, $password){
+         dd($username,$password);
+    }
+
+    public function page($name = null,$age = null){
+        return "<h1>we are in page, name is $name and page is $age</h1>";
     }
 }
