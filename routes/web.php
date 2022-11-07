@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/slider' , 'App\Http\Controllers\SliderController@test');
-
+Route::get('/slider', 'App\Http\Controllers\SliderController@slider')-> name("slider-page");
+Route::get('/test','App\Http\Controllers\SliderController@test')-> name('test-page');
 
