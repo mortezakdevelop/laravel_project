@@ -16,6 +16,6 @@ class SliderController extends Controller
     }
 
     public function page($name = null,$age = null){
-        return "<h1>we are in page, name is $name and page is $age</h1>";
+        return "<h1>we are in page, name is $name and age is $age</h1>";
     }
 }
